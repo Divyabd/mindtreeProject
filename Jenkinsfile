@@ -9,8 +9,10 @@ pipeline{
   
 
   stages {
-    stage{
+    stage(''){
+      step{
       echo "build number : ${currentBuild.number}"
+      }
     }
     stage('MavenVertion'){
       steps{
