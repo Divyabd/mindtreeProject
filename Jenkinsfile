@@ -6,8 +6,12 @@ pipeline{
         args '-v/.m2:/root/.m2'
   }
 }
+  
 
   stages {
+    stage{
+      echo "build number : ${currentBuild.number}"
+    }
     stage('MavenVertion'){
       steps{
         
