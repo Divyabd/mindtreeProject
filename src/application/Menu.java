@@ -23,6 +23,7 @@ public class Menu {
 	    	 case 1:
 	    		 System.out.println("\n");
 	    		 System.out.println("Enter the verticle and project details");
+				 System.out.println("Enter the verticle and project details");
 	    		 Verticle[] res= add(arr,n,arrOne);
 	    		 display(res,arrOne);
 	    		 break;
