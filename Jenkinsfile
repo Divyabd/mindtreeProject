@@ -13,8 +13,8 @@ pipeline{
     
     stage('MavenVersion'){
       steps{
-       echo $JOB_NAME
-        echo $BUILD_NUMBER
+      sh  ' echo $JOB_NAME''
+        sh ' echo $BUILD_NUMBER'
         echo 'Maven Vaersion'
         sh 'mvn -version'
        
