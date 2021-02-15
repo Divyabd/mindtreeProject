@@ -9,11 +9,7 @@ pipeline{
   
 
   stages {
-    stage('hgtfyt'){
-      step{
-      echo "build number : ${currentBuild.number}"
-      }
-    }
+    
     stage('MavenVertion'){
       steps{
         
