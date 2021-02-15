@@ -3,16 +3,26 @@
   <groupId>MidtreeProject</groupId>
   <artifactId>MidtreeProject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <build>
-    <sourceDirectory>src</sourceDirectory>
+
+    
+    <build>
     <plugins>
       <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.7.0</version>
+        <!-- Build an executable JAR -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.0.2</version>
         <configuration>
-          <release>14</release>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <classpathPrefix>lib/</classpathPrefix>
+              <mainClass>com.mycompany.app.App</mainClass>
+            </manifest>
+          </archive>
         </configuration>
       </plugin>
     </plugins>
   </build>
+    
 </project>
