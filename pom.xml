@@ -3,6 +3,11 @@
   <groupId>MidtreeProject</groupId>
   <artifactId>MidtreeProject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+   
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+  </properties>
   
    <properties>
   <sonar.projectKey>Divyabd_mindtreeProject</sonar.projectKey>
