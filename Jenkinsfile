@@ -51,7 +51,7 @@ pipeline{
     
     stage('build && SonarQube analysis') {
             steps {
-               sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar'
+             sh 'mvn verify sonar:sonar'
             }
     }
   }
