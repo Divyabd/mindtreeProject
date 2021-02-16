@@ -3,6 +3,13 @@
   <groupId>MidtreeProject</groupId>
   <artifactId>MidtreeProject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+   <properties>
+  <sonar.projectKey>Divyabd_mindtreeProject</sonar.projectKey>
+  <sonar.organization>divyabd</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+</properties> 
+  
     <build>
     <plugins>
       <plugin>
@@ -29,10 +36,6 @@
 <artifactId>junit5-engine</artifactId>
 <version>5.0.0-ALPHA</version>
 </dependency>
-    <properties>
-  <sonar.projectKey>Divyabd_mindtreeProject</sonar.projectKey>
-  <sonar.organization>divyabd</sonar.organization>
-  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-</properties>
+   
 </dependencies>
 </project>
