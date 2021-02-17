@@ -11,22 +11,6 @@ pipeline{
   stages {
     
     
-    stage('MavenVersion'){
-      steps{
-         sh 'echo $JOB_NAME'
-        sh 'echo $BUILD_NUMBER'
-        echo 'Maven Vaersion'
-        sh 'mvn -version'
-       
-      }
-     }
-    stage('Clean'){
-      steps{
-        echo 'Clean'
-        sh 'mvn clean'
-       
-      }
-     }
     stage('Compile'){
       steps{
         echo 'Compile'
@@ -41,13 +25,7 @@ pipeline{
         
       }
      }
-    stage('Test'){
-      steps{
-        echo 'Maven test'
-        sh 'mvn test'
-      }
-      
-  }
+   
     
     stage('build && SonarQube analysis') {
             steps {
