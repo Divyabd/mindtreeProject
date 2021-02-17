@@ -14,7 +14,7 @@
   <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 </properties> 
   
-    <build>
+  <build>
     <plugins>
       <plugin>
         <!-- Build an executable JAR -->
